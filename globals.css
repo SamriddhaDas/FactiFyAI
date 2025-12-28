@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('/bg-news.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  @apply text-white antialiased selection:bg-yellow-400 selection:text-black;
+}
+
+h1, h2, h3 {
+  @apply tracking-tight;
+}
+
+p {
+  @apply leading-relaxed;
+}
