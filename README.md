@@ -1,5 +1,5 @@
 # FactiFyAI
-A website verifying the integrity of a given news using an url or by pasting the paragraph of it. Built with Next.js 14, TypeScript, and Tailwind CSS.
+A website verifying the integrity of a given news using an url or by pasting the paragraph of it. Built with Next.js 14, JavaScript, and Tailwind CSS.
 
 # Background
 During emergencies and major events, misinformation spreads rapidly across social media 
@@ -21,7 +21,7 @@ automated censorship systems risk bias and misuse.
 # Techstack
 Frontend:
   ● Framework: Next.js 14 (App Router)
-  ● Language: TypeScript
+  ● Language: JavaScript
   ● Styling: Tailwind CSS
   ● State Management: React Context API
   
