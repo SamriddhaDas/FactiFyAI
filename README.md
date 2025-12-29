@@ -28,3 +28,40 @@ Frontend:
 Backend:
   ● Python (Flask)
   ● Rule based verification logic
+
+  # Project Structure (Frontend)
+  factifyai/
+│ package.json
+│ tailwind.config.js
+│ postcss.config.js
+│ next.config.js
+│ jsconfig.json
+│ globals.css
+│
+├── app/
+│   ├── layout.js
+│   ├── page.js
+│   │
+│   ├── verify/
+│   │   └── page.js
+│   │
+│   ├── about/
+│   │   └── page.js
+│   │
+│   └── resources/
+│       └── page.js
+│
+├── components/
+│   ├── Header.jsx
+│   ├── Hero.jsx
+│   ├── CredibilityCard.jsx
+│   └── Footer.jsx
+│
+└── public/
+    └── bg-news.png       # Your background
+
+# Project Structure (Backend)
+backend/
+│ app.py
+
+
