@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-image: url('/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  @apply text-white antialiased selection:bg-yellow-400 selection:text-black;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65); /* 65% darkness */
+  pointer-events: none;
+  z-index: -1;
+}
+
+.header-overlay {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+
+h1, h2, h3 {
+  @apply tracking-tight;
+}
+
+p {
+  @apply leading-relaxed;
+}
