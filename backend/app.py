@@ -2,8 +2,13 @@ from flask import Flask, request, jsonify
 from datetime import datetime
 import re
 import requests
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
+def analyze():
+    if request.method == "OPTIONS":
+        return jsonify({"success": True}), 200
 
 KNOWN_SOURCES = {
     "reuters.com": 0.95,
